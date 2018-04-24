@@ -1,7 +1,7 @@
-DROP TABLE IF EXISTS criminal;
+DROP TABLE IF EXISTS criminals;
 
 
-CREATE TABLE criminal (
+CREATE TABLE criminals (
   id SERIAL4 PRIMARY KEY,
     name VARCHAR(255),
     species VARCHAR(255),

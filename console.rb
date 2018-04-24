@@ -1,5 +1,5 @@
 require("pry")
-require("models/criminals")
+require_relative("models/criminal")
 
 
 criminal1 = Criminal.new({
@@ -8,15 +8,15 @@ criminal1 = Criminal.new({
   "bounty value" => "10",
   "danger level" => "High"
   })
+criminal1.save()
 
-
-criminal1 = Criminal.new({
+criminal2 = Criminal.new({
   "name" => "Skeleton",
   "species" => "Human Ramains",
   "bounty value" => "5",
   "danger level" => "Low"
   })
-
+criminal2.save()
 
 
 

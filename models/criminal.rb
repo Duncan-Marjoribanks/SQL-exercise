@@ -13,6 +13,7 @@ def initialize(options)
 end
 
 
+
 # instance methods
 
 def save()
@@ -26,10 +27,10 @@ def save()
     ($1, $2, $3, $4) RETURNING id"
     values = [@name, @species, @bounty_value, @danger_level]
     db.prepare("save", sql)
-    @id = db.exec_prepare("save", values)[0]["id"].to_i
+    @id = db.exec_prepared("save", values)[0]["id"].to_i
     db.close()
   end
-  
+
 
 
 
