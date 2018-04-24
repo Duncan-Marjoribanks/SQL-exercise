@@ -5,16 +5,16 @@ require_relative("models/criminal")
 criminal1 = Criminal.new({
   "name" => "Texas Pete",
   "species" => "Human",
-  "bounty value" => "10",
-  "danger level" => "High"
+  "bounty_value" => "10",
+  "danger_level" => "High"
   })
 criminal1.save()
 
 criminal2 = Criminal.new({
   "name" => "Skeleton",
   "species" => "Human Ramains",
-  "bounty value" => "5",
-  "danger level" => "Low"
+  "bounty_value" => "5",
+  "danger_level" => "Low"
   })
 criminal2.save()
 
